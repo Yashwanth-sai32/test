@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+.blur-background {
+  /* opacity: 0.1; */
+  filter: blur(30px);
+}
+span {
+  text-decoration: line-through;
+}
+/* HEADER STYLES */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 2px solid black;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+header a {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+.left-header a {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.right-header a {
+  color: #333333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 25px;
+}
+.left-header a {
+  letter-spacing: -1px;
+}
+
+/* MAIN STYLES */
+main {
+  background-color: #b3dded;
+  /* background-color: antiquewhite; */
+  border-bottom: 2px solid black;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+.page-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15px;
+  gap: 100px;
+}
+.left-main {
+  max-width: 600px;
+}
+main h1,
+.chats h1 {
+  font-size: 55px;
+  font-weight: bolder;
+  line-height: 1em;
+  max-width: 480px;
+}
+.left-main p {
+  margin: 20px 0;
+  font-size: 23px;
+  font-family: Arial;
+  line-height: 1.5em;
+  max-width: 500px;
+}
+.right-main {
+  width: 650px;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  border-radius: 1.6rem;
+  transition: all 0.5s;
+}
+img:hover {
+  transform: scale(0.9);
+}
+.main-btns {
+  margin-top: 40px;
+}
+.main-btns a:first-child {
+  background-color: white;
+  transition: all 0.3s;
+}
+.main-btns a:last-child {
+  transition: all 0.3s;
+}
+.main-btns a:hover {
+  background-color: black;
+  color: white;
+}
+.main-btns a {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 12px;
+}
+.main-btns a {
+  color: #333333;
+  font-family: Arial;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+/* TIMER DIV */
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 250px;
+}
+
+/* Timer Heading */
+.timer-heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #00719d;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 220px;
+}
+.timer-heading p {
+  font-size: 20px;
+  font-weight: lighter;
+  color: black;
+}
+/* Timer component */
+#timer-component {
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: bold;
+  color: #8ecde6;
+  text-align: center;
+  margin-right: 220px;
+}
+
+/* Chats Component */
+.chats {
+  background-color: #b3dded;
+}
+
+.chat--all {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+.chat--all p {
+  margin-top: 15px;
+}
+.chat-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  padding: 0 250px;
+}
+.chat-element:nth-child(even) {
+  background-color: white;
+}
+.chat-image {
+  width: 360px;
+}
+
+/* Apologies */
+
+.apologies-section {
+  padding: 60px 250px;
+  border-top: 2px solid black;
+}
+.apologies-section h1 {
+  font-size: 45px;
+}
+.apologies-section p {
+  margin: 20px 0 30px 0;
+}
+/* FOOTER */
+footer h4 {
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+/* LOGIN  */
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  text-align: center;
+  border-radius: 12px;
+}
+.login p {
+  margin-top: 20px;
+}
+.login input {
+  border: none;
+  padding: 8px;
+  margin-right: 6px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.login button {
+  border: none;
+  background-color: #00719d;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.5s;
+}
